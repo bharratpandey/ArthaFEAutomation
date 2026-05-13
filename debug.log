@@ -1,0 +1,1486 @@
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: /opt/homebrew/Cellar/maven/3.9.9/libexec
+Java version: 23.0.2, vendor: Homebrew, runtime: /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home
+Default locale: en_IN, platform encoding: UTF-8
+OS name: "mac os x", version: "26.2", arch: "aarch64", family: "mac"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.util < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /opt/homebrew/Cellar/maven/3.9.9/libexec/conf/settings.xml
+[DEBUG] Reading user settings from /Users/bharatpandey/.m2/settings.xml
+[DEBUG] Reading global toolchains from /opt/homebrew/Cellar/maven/3.9.9/libexec/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/bharatpandey/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/bharatpandey/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/bharatpandey/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.artha:ArthaFEAutomation:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.artha:ArthaFEAutomation:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, test]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] --------------------< com.artha:ArthaFEAutomation >---------------------
+[INFO] Building ArthaFEAutomation 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Creating adapter using nameMapper 'gav' and factory 'rwlock-local'
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.artha:ArthaFEAutomation:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${maven.clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <fast default-value="false">${maven.clean.fast}</fast>
+  <fastDir>${maven.clean.fastDir}</fastDir>
+  <fastMode default-value="background">${maven.clean.fastMode}</fastMode>
+  <followSymLinks default-value="false">${maven.clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.build.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${maven.clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}">${maven.compiler.outputDirectory}</outputDirectory>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModulePath default-value="true"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathDependencies>${maven.test.additionalClasspathDependencies}</additionalClasspathDependencies>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <enableProcessChecker>${surefire.enableProcessChecker}</enableProcessChecker>
+  <encoding default-value="${project.reporting.outputEncoding}">${surefire.encoding}</encoding>
+  <excludeJUnit5Engines>${surefire.excludeJUnit5Engines}</excludeJUnit5Engines>
+  <excludedEnvironmentVariables>${surefire.excludedEnvironmentVariables}</excludedEnvironmentVariables>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludes>${surefire.excludes}</excludes>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests default-value="true">${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests default-value="false">${failIfNoTests}</failIfNoTests>
+  <failOnFlakeCount default-value="0">${surefire.failOnFlakeCount}</failOnFlakeCount>
+  <forkCount default-value="1">0</forkCount>
+  <forkNode>${surefire.forkNode}</forkNode>
+  <forkedProcessExitTimeoutInSeconds default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includeJUnit5Engines>${surefire.includeJUnit5Engines}</includeJUnit5Engines>
+  <includes>${surefire.includes}</includes>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <projectBuildDirectory default-value="${project.build.directory}"/>
+  <properties>
+    <property>
+      <name>listener</name>
+      <value>io.qameta.allure.junit5.AllureJunit5</value>
+    </property>
+  </properties>
+  <redirectTestOutputToFile default-value="false">true</redirectTestOutputToFile>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">false</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <runOrderRandomSeed>${surefire.runOrder.random.seed}</runOrderRandomSeed>
+  <session default-value="${session}"/>
+  <shutdown default-value="exit">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <systemPropertiesFile>${surefire.systemPropertiesFile}</systemPropertiesFile>
+  <tempDir default-value="surefire">${tempDir}</tempDir>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="false">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useModulePath default-value="true">false</useModulePath>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=292750, ConflictMarker.markTime=73916, ConflictMarker.nodeCount=47, ConflictIdSorter.graphTime=153833, ConflictIdSorter.topsortTime=108667, ConflictIdSorter.conflictIdCount=23, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2093209, ConflictResolver.conflictItemCount=39, DfDependencyCollector.collectTime=203851250, DfDependencyCollector.transformTime=3552459}
+[DEBUG] com.artha:ArthaFEAutomation:jar:1.0-SNAPSHOT
+[DEBUG]    com.microsoft.playwright:playwright:jar:1.46.0:compile
+[DEBUG]       com.google.code.gson:gson:jar:2.11.0:compile
+[DEBUG]          com.google.errorprone:error_prone_annotations:jar:2.27.0:compile
+[DEBUG]       org.opentest4j:opentest4j:jar:1.3.0:compile
+[DEBUG]       com.microsoft.playwright:driver:jar:1.46.0:compile
+[DEBUG]       com.microsoft.playwright:driver-bundle:jar:1.46.0:compile
+[DEBUG]    org.junit.jupiter:junit-jupiter:jar:5.9.3:test
+[DEBUG]       org.junit.jupiter:junit-jupiter-api:jar:5.9.3:test
+[DEBUG]          org.junit.platform:junit-platform-commons:jar:1.9.3:test
+[DEBUG]          org.apiguardian:apiguardian-api:jar:1.1.2:test
+[DEBUG]       org.junit.jupiter:junit-jupiter-params:jar:5.9.3:test
+[DEBUG]       org.junit.jupiter:junit-jupiter-engine:jar:5.9.3:test
+[DEBUG]          org.junit.platform:junit-platform-engine:jar:1.9.3:test
+[DEBUG]    org.testng:testng:jar:7.10.2:test
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:test
+[DEBUG]       com.beust:jcommander:jar:1.82:test
+[DEBUG]       org.webjars:jquery:jar:3.7.1:test
+[DEBUG]    io.qameta.allure:allure-junit5:jar:2.29.0:test
+[DEBUG]       io.qameta.allure:allure-junit-platform:jar:2.29.0:test
+[DEBUG]          org.junit.platform:junit-platform-launcher:jar:1.10.3:test
+[DEBUG]          io.qameta.allure:allure-test-filter:jar:2.29.0:test
+[DEBUG]    io.qameta.allure:allure-java-commons:jar:2.29.0:test
+[DEBUG]       io.qameta.allure:allure-model:jar:2.29.0:test
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ArthaFEAutomation ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=12458, ConflictMarker.markTime=29959, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=4375, ConflictIdSorter.topsortTime=6459, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=135125, ConflictResolver.conflictItemCount=3, DfDependencyCollector.collectTime=20028417, DfDependencyCollector.transformTime=197500}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:3.2.0
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.3.4:compile
+[DEBUG]       commons-io:commons-io:jar:2.6:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:3.2.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@18ff02e4]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean:default-clean' with basic configurator -->
+[DEBUG]   (f) directory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) fast = false
+[DEBUG]   (f) fastMode = background
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[DEBUG]   (f) reportDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4248b963
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/surefire-reports/null-output.txt
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/surefire-reports
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources/test-annotations
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin/testCompile
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/maven-status
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-sources/annotations
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-sources
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/DealPICreationPage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/PMTCreditNote.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/SupplyPage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/ProjectPICreation.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/LoginPage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/DealPage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/DealProjectCreatedPage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/DealClosedWonPage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/ProjectMilestonePage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/PMTPICreation.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/KycDocumentationPage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/StagePage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/PMTDebitNote.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/PMTProjectCreation.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/ProjectPOCreation.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/PMTPOCreation.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/PMTMilestonePage.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages/AccountPage.class
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/pages
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/tests/BaseTest.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/tests/AccountTest.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/tests/LoginTest.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/tests/PMTProjectTest.class
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/tests/DealTest.class
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha/tests
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com/artha
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/com
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-client.pdf
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-proposal.pdf
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-client-signoff.pdf
+[INFO] Deleting file /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-vendor.pdf
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes
+[INFO] Deleting directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target
+[DEBUG] Skipping non-existing directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[DEBUG] Skipping non-existing directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ArthaFEAutomation ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=28792, ConflictMarker.markTime=35167, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=10000, ConflictIdSorter.topsortTime=7166, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=138625, ConflictResolver.conflictItemCount=13, DfDependencyCollector.collectTime=32061167, DfDependencyCollector.transformTime=231875}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.5.1:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.3.1:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.12.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.3.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.12.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@18ff02e4]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.artha:ArthaFEAutomation:1.0-SNAPSHOT @ /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4248b963
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] allure.version: 2.29.0
+[DEBUG] apple.awt.application.name: Launcher
+[DEBUG] classworlds.conf: /opt/homebrew/Cellar/maven/3.9.9/libexec/bin/m2.conf
+[DEBUG] env.COMMAND_MODE: unix2003
+[DEBUG] env.FIG_TERM: 1
+[DEBUG] env.HOME: /Users/bharatpandey
+[DEBUG] env.HOMEBREW_CELLAR: /opt/homebrew/Cellar
+[DEBUG] env.HOMEBREW_PREFIX: /opt/homebrew
+[DEBUG] env.HOMEBREW_REPOSITORY: /opt/homebrew
+[DEBUG] env.INFOPATH: /opt/homebrew/share/info:
+[DEBUG] env.JAVA_HOME: /opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home
+[DEBUG] env.LANG: C.UTF-8
+[DEBUG] env.LC_CTYPE: UTF-8
+[DEBUG] env.LOGNAME: bharatpandey
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  clean test -Dtest=DealTest -X
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] env.OLDPWD: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] env.OSLogRateLimit: 64
+[DEBUG] env.PATH: /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin
+[DEBUG] env.PROCESS_LAUNCHED_BY_CW: 1
+[DEBUG] env.PROCESS_LAUNCHED_BY_Q: 1
+[DEBUG] env.PWD: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] env.SHELL: /bin/zsh
+[DEBUG] env.SHLVL: 1
+[DEBUG] env.SSH_AUTH_SOCK: /private/tmp/com.apple.launchd.b35y3coFd7/Listeners
+[DEBUG] env.TERM: xterm-256color
+[DEBUG] env.TERMINAL_EMULATOR: JetBrains-JediTerm
+[DEBUG] env.TERM_SESSION_ID: 08487f38-c5c0-415c-8b70-98265a4ce61f
+[DEBUG] env.TMPDIR: /var/folders/cf/cr4_yqy12zgc_0_g4gjtl96h0000gp/T/
+[DEBUG] env.USER: bharatpandey
+[DEBUG] env.XPC_FLAGS: 0x0
+[DEBUG] env.XPC_SERVICE_NAME: 0
+[DEBUG] env.__CFBundleIdentifier: com.jetbrains.intellij.ce
+[DEBUG] env.__CF_USER_TEXT_ENCODING: 0x1F6:0x0:0x0
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] ftp.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] http.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] java.class.path: /opt/homebrew/Cellar/maven/3.9.9/libexec/boot/plexus-classworlds-2.8.0.jar
+[DEBUG] java.class.version: 67.0
+[DEBUG] java.home: /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home
+[DEBUG] java.io.tmpdir: /var/folders/cf/cr4_yqy12zgc_0_g4gjtl96h0000gp/T/
+[DEBUG] java.library.path: /Users/bharatpandey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 23.0.2
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 23
+[DEBUG] java.vendor: Homebrew
+[DEBUG] java.vendor.url: https://github.com/Homebrew/homebrew-core/issues
+[DEBUG] java.vendor.url.bug: https://github.com/Homebrew/homebrew-core/issues
+[DEBUG] java.vendor.version: Homebrew
+[DEBUG] java.version: 23.0.2
+[DEBUG] java.version.date: 2025-01-21
+[DEBUG] java.vm.compressedOopsMode: Zero based
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 23
+[DEBUG] java.vm.vendor: Homebrew
+[DEBUG] java.vm.version: 23.0.2
+[DEBUG] jdk.debug: release
+[DEBUG] junit.jupiter.version: 5.9.3
+[DEBUG] library.jansi.path: /opt/homebrew/Cellar/maven/3.9.9/libexec/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] maven.build.timestamp: 2026-01-20T10:22:26Z
+[DEBUG] maven.build.version: Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+[DEBUG] maven.compiler.source: 17
+[DEBUG] maven.compiler.target: 17
+[DEBUG] maven.conf: /opt/homebrew/Cellar/maven/3.9.9/libexec/conf
+[DEBUG] maven.home: /opt/homebrew/Cellar/maven/3.9.9/libexec
+[DEBUG] maven.multiModuleProjectDirectory: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] maven.version: 3.9.9
+[DEBUG] native.encoding: UTF-8
+[DEBUG] os.arch: aarch64
+[DEBUG] os.name: Mac OS X
+[DEBUG] os.version: 26.2
+[DEBUG] path.separator: :
+[DEBUG] playwright.version: 1.46.0
+[DEBUG] project.baseUri: file:/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] socksNonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] stderr.encoding: UTF-8
+[DEBUG] stdout.encoding: UTF-8
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeBig
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dtest=DealTest -X
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: UTF-8
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] test: DealTest
+[DEBUG] user.country: IN
+[DEBUG] user.dir: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] user.home: /Users/bharatpandey
+[DEBUG] user.language: en
+[DEBUG] user.name: bharatpandey
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/main/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ ArthaFEAutomation ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=125417, ConflictMarker.markTime=96500, ConflictMarker.nodeCount=22, ConflictIdSorter.graphTime=37750, ConflictIdSorter.topsortTime=27875, ConflictIdSorter.conflictIdCount=14, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=682833, ConflictResolver.conflictItemCount=22, DfDependencyCollector.collectTime=215048291, DfDependencyCollector.transformTime=1013042}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.13.0
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.4.2:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:1.2.0:compile
+[DEBUG]       org.ow2.asm:asm:jar:9.6:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.0.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.15.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.15.0:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.codehaus.plexus:plexus-xml:jar:3.0.0:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.15.0:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:4.0.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.13.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.4.2
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.2.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.6
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-xml:jar:3.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@18ff02e4]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG]   (f) buildDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target
+[DEBUG]   (f) compilePath = [/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes, /Users/bharatpandey/.m2/repository/com/microsoft/playwright/playwright/1.46.0/playwright-1.46.0.jar, /Users/bharatpandey/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar, /Users/bharatpandey/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar, /Users/bharatpandey/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar, /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver/1.46.0/driver-1.46.0.jar, /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver-bundle/1.46.0/driver-bundle-1.46.0.jar]
+[DEBUG]   (f) compileSourceRoots = [/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: com.artha:ArthaFEAutomation:1.0-SNAPSHOT @ /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/pom.xml
+[DEBUG]   (f) projectArtifact = com.artha:ArthaFEAutomation:jar:1.0-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4248b963
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 17
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 17
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-sources/annotations to compile source roots:
+  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/main/java
+[DEBUG] New compile source roots:
+  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/main/java
+  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ArthaFEAutomation ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@18ff02e4]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources:default-testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.artha:ArthaFEAutomation:1.0-SNAPSHOT @ /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4248b963
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] allure.version: 2.29.0
+[DEBUG] apple.awt.application.name: Launcher
+[DEBUG] classworlds.conf: /opt/homebrew/Cellar/maven/3.9.9/libexec/bin/m2.conf
+[DEBUG] env.COMMAND_MODE: unix2003
+[DEBUG] env.FIG_TERM: 1
+[DEBUG] env.HOME: /Users/bharatpandey
+[DEBUG] env.HOMEBREW_CELLAR: /opt/homebrew/Cellar
+[DEBUG] env.HOMEBREW_PREFIX: /opt/homebrew
+[DEBUG] env.HOMEBREW_REPOSITORY: /opt/homebrew
+[DEBUG] env.INFOPATH: /opt/homebrew/share/info:
+[DEBUG] env.JAVA_HOME: /opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home
+[DEBUG] env.LANG: C.UTF-8
+[DEBUG] env.LC_CTYPE: UTF-8
+[DEBUG] env.LOGNAME: bharatpandey
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  clean test -Dtest=DealTest -X
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] env.OLDPWD: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] env.OSLogRateLimit: 64
+[DEBUG] env.PATH: /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin
+[DEBUG] env.PROCESS_LAUNCHED_BY_CW: 1
+[DEBUG] env.PROCESS_LAUNCHED_BY_Q: 1
+[DEBUG] env.PWD: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] env.SHELL: /bin/zsh
+[DEBUG] env.SHLVL: 1
+[DEBUG] env.SSH_AUTH_SOCK: /private/tmp/com.apple.launchd.b35y3coFd7/Listeners
+[DEBUG] env.TERM: xterm-256color
+[DEBUG] env.TERMINAL_EMULATOR: JetBrains-JediTerm
+[DEBUG] env.TERM_SESSION_ID: 08487f38-c5c0-415c-8b70-98265a4ce61f
+[DEBUG] env.TMPDIR: /var/folders/cf/cr4_yqy12zgc_0_g4gjtl96h0000gp/T/
+[DEBUG] env.USER: bharatpandey
+[DEBUG] env.XPC_FLAGS: 0x0
+[DEBUG] env.XPC_SERVICE_NAME: 0
+[DEBUG] env.__CFBundleIdentifier: com.jetbrains.intellij.ce
+[DEBUG] env.__CF_USER_TEXT_ENCODING: 0x1F6:0x0:0x0
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] ftp.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] http.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] java.class.path: /opt/homebrew/Cellar/maven/3.9.9/libexec/boot/plexus-classworlds-2.8.0.jar
+[DEBUG] java.class.version: 67.0
+[DEBUG] java.home: /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home
+[DEBUG] java.io.tmpdir: /var/folders/cf/cr4_yqy12zgc_0_g4gjtl96h0000gp/T/
+[DEBUG] java.library.path: /Users/bharatpandey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 23.0.2
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 23
+[DEBUG] java.vendor: Homebrew
+[DEBUG] java.vendor.url: https://github.com/Homebrew/homebrew-core/issues
+[DEBUG] java.vendor.url.bug: https://github.com/Homebrew/homebrew-core/issues
+[DEBUG] java.vendor.version: Homebrew
+[DEBUG] java.version: 23.0.2
+[DEBUG] java.version.date: 2025-01-21
+[DEBUG] java.vm.compressedOopsMode: Zero based
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 23
+[DEBUG] java.vm.vendor: Homebrew
+[DEBUG] java.vm.version: 23.0.2
+[DEBUG] jdk.debug: release
+[DEBUG] junit.jupiter.version: 5.9.3
+[DEBUG] library.jansi.path: /opt/homebrew/Cellar/maven/3.9.9/libexec/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] maven.build.timestamp: 2026-01-20T10:22:26Z
+[DEBUG] maven.build.version: Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+[DEBUG] maven.compiler.source: 17
+[DEBUG] maven.compiler.target: 17
+[DEBUG] maven.conf: /opt/homebrew/Cellar/maven/3.9.9/libexec/conf
+[DEBUG] maven.home: /opt/homebrew/Cellar/maven/3.9.9/libexec
+[DEBUG] maven.multiModuleProjectDirectory: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] maven.version: 3.9.9
+[DEBUG] native.encoding: UTF-8
+[DEBUG] os.arch: aarch64
+[DEBUG] os.name: Mac OS X
+[DEBUG] os.version: 26.2
+[DEBUG] path.separator: :
+[DEBUG] playwright.version: 1.46.0
+[DEBUG] project.baseUri: file:/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] socksNonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] stderr.encoding: UTF-8
+[DEBUG] stdout.encoding: UTF-8
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeBig
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dtest=DealTest -X
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: UTF-8
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] test: DealTest
+[DEBUG] user.country: IN
+[DEBUG] user.dir: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] user.home: /Users/bharatpandey
+[DEBUG] user.language: en
+[DEBUG] user.name: bharatpandey
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 4 resources from src/test/resources to target/test-classes
+[DEBUG] Copying file demo-vendor.pdf
+[DEBUG] file demo-vendor.pdf has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'demo-vendor.pdf'.
+[DEBUG] copy /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/resources/demo-vendor.pdf to /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-vendor.pdf
+[DEBUG] Copying file demo-client-signoff.pdf
+[DEBUG] file demo-client-signoff.pdf has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'demo-client-signoff.pdf'.
+[DEBUG] copy /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/resources/demo-client-signoff.pdf to /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-client-signoff.pdf
+[DEBUG] Copying file demo-proposal.pdf
+[DEBUG] file demo-proposal.pdf has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'demo-proposal.pdf'.
+[DEBUG] copy /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/resources/demo-proposal.pdf to /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-proposal.pdf
+[DEBUG] Copying file demo-client.pdf
+[DEBUG] file demo-client.pdf has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'demo-client.pdf'.
+[DEBUG] copy /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/resources/demo-client.pdf to /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes/demo-client.pdf
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ ArthaFEAutomation ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@18ff02e4]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile:default-testCompile' with basic configurator -->
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG]   (f) buildDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target
+[DEBUG]   (f) compileSourceRoots = [/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac-test
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: com.artha:ArthaFEAutomation:1.0-SNAPSHOT @ /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4248b963
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 17
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 17
+[DEBUG]   (f) testPath = [/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes, /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes, /Users/bharatpandey/.m2/repository/com/microsoft/playwright/playwright/1.46.0/playwright-1.46.0.jar, /Users/bharatpandey/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar, /Users/bharatpandey/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar, /Users/bharatpandey/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar, /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver/1.46.0/driver-1.46.0.jar, /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver-bundle/1.46.0/driver-bundle-1.46.0.jar, /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar, /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar, /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar, /Users/bharatpandey/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar, /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar, /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar, /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar, /Users/bharatpandey/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar, /Users/bharatpandey/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar, /Users/bharatpandey/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar, /Users/bharatpandey/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar, /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit5/2.29.0/allure-junit5-2.29.0.jar, /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit-platform/2.29.0/allure-junit-platform-2.29.0.jar, /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.3/junit-platform-launcher-1.10.3.jar, /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar, /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar, /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) useModulePath = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources/test-annotations to test-compile source roots:
+  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java
+[DEBUG] New test-compile source roots:
+  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java
+  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources/test-annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/SupplyPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTProjectCreation.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/AccountPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealProjectCreatedPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/ProjectMilestonePage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTPOCreation.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/ProjectPOCreation.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/StagePage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/LoginPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/AccountTest.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealPICreationPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealClosedWonPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTCreditNote.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/DealTest.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/LoginTest.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/ProjectPICreation.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTDebitNote.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTMilestonePage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTPICreation.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/PMTProjectTest.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/KycDocumentationPage.java
+[INFO] 	Stale source detected: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/BaseTest.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/AccountPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealClosedWonPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealPICreationPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealProjectCreatedPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/KycDocumentationPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/LoginPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTCreditNote.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTDebitNote.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTMilestonePage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTPICreation.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTPOCreation.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/PMTProjectCreation.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/ProjectMilestonePage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/ProjectPICreation.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/ProjectPOCreation.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/StagePage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/SupplyPage.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/AccountTest.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/BaseTest.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/DealTest.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/LoginTest.java
+[INFO] 	Input tree files (+): /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/tests/PMTProjectTest.java
+[INFO] Recompiling the module because of changed source code.
+[DEBUG] Classpath:
+[DEBUG]  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes
+[DEBUG]  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[DEBUG]  /Users/bharatpandey/.m2/repository/com/microsoft/playwright/playwright/1.46.0/playwright-1.46.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver/1.46.0/driver-1.46.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver-bundle/1.46.0/driver-bundle-1.46.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit5/2.29.0/allure-junit5-2.29.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit-platform/2.29.0/allure-junit-platform-2.29.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.3/junit-platform-launcher-1.10.3.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar
+[DEBUG]  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar
+[DEBUG] Source roots:
+[DEBUG]  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java
+[DEBUG]  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources/test-annotations
+[DEBUG] Command line options:
+[DEBUG] -d /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes -classpath /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes:/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes:/Users/bharatpandey/.m2/repository/com/microsoft/playwright/playwright/1.46.0/playwright-1.46.0.jar:/Users/bharatpandey/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/bharatpandey/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/bharatpandey/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver/1.46.0/driver-1.46.0.jar:/Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver-bundle/1.46.0/driver-bundle-1.46.0.jar:/Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/bharatpandey/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/bharatpandey/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/bharatpandey/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/bharatpandey/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/bharatpandey/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit5/2.29.0/allure-junit5-2.29.0.jar:/Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit-platform/2.29.0/allure-junit-platform-2.29.0.jar:/Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.3/junit-platform-launcher-1.10.3.jar:/Users/bharatpandey/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar:/Users/bharatpandey/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar:/Users/bharatpandey/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar: -sourcepath /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java:/Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources/test-annotations: -s /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/generated-test-sources/test-annotations -g -target 17 -source 17 -encoding UTF-8 -XDuseUnsharedTable=true
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 23 source files with javac [debug target 17] to target/test-classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[WARNING] location of system modules is not set in conjunction with -source 17
+  not setting the location of system modules may lead to class files that cannot run on JDK 17
+    --release 17 is recommended instead of -source 17 -target 17 because it sets the location of system modules automatically
+[INFO] /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealPICreationPage.java: Some input files use or override a deprecated API.
+[INFO] /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java/com/artha/pages/DealPICreationPage.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ ArthaFEAutomation ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=129791, ConflictMarker.markTime=84292, ConflictMarker.nodeCount=78, ConflictIdSorter.graphTime=64666, ConflictIdSorter.topsortTime=25084, ConflictIdSorter.conflictIdCount=39, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=966750, ConflictResolver.conflictItemCount=76, DfDependencyCollector.collectTime=113477708, DfDependencyCollector.transformTime=1291167}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:3.2.5
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:3.2.5:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:3.2.5:compile
+[DEBUG]          org.apache.maven.surefire:surefire-logger-api:jar:3.2.5:compile
+[DEBUG]       org.apache.maven.surefire:surefire-extensions-api:jar:3.2.5:compile
+[DEBUG]       org.apache.maven.surefire:surefire-booter:jar:3.2.5:compile
+[DEBUG]          org.apache.maven.surefire:surefire-extensions-spi:jar:3.2.5:compile
+[DEBUG]       org.eclipse.aether:aether-util:jar:1.0.0.v20140518:compile
+[DEBUG]          org.eclipse.aether:aether-api:jar:1.0.0.v20140518:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.1:compile (version managed from default) (exclusions managed from default)
+[DEBUG]          org.apache.maven:maven-artifact:jar:3.2.5:provided (scope managed from default) (version managed from default)
+[DEBUG]             org.codehaus.plexus:plexus-utils:jar:4.0.0:provided (version managed from default)
+[DEBUG]          org.apache.maven:maven-core:jar:3.2.5:provided (scope managed from default) (version managed from default)
+[DEBUG]             org.apache.maven:maven-settings:jar:3.2.5:provided (version managed from default)
+[DEBUG]             org.apache.maven:maven-settings-builder:jar:3.2.5:provided
+[DEBUG]             org.apache.maven:maven-repository-metadata:jar:3.2.5:provided
+[DEBUG]             org.apache.maven:maven-model-builder:jar:3.2.5:provided
+[DEBUG]             org.apache.maven:maven-aether-provider:jar:3.2.5:provided
+[DEBUG]                org.eclipse.aether:aether-spi:jar:1.0.0.v20140518:provided
+[DEBUG]             org.eclipse.aether:aether-impl:jar:1.0.0.v20140518:provided
+[DEBUG]             org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.9.0.M2:provided (version managed from default)
+[DEBUG]                javax.annotation:javax.annotation-api:jar:1.2:provided
+[DEBUG]                javax.enterprise:cdi-api:jar:1.2:provided
+[DEBUG]                org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.9.0.M2:provided (version managed from default)
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.3:provided
+[DEBUG]                javax.inject:javax.inject:jar:1:provided
+[DEBUG]                aopalliance:aopalliance:jar:1.0:provided
+[DEBUG]                com.google.guava:guava:jar:16.0.1:provided
+[DEBUG]             org.codehaus.plexus:plexus-interpolation:jar:1.21:provided
+[DEBUG]             org.codehaus.plexus:plexus-classworlds:jar:2.5.2:provided
+[DEBUG]             org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:provided
+[DEBUG]             org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:provided
+[DEBUG]                org.sonatype.plexus:plexus-cipher:jar:1.4:provided
+[DEBUG]          org.apache.maven:maven-plugin-api:jar:3.2.5:provided (scope managed from default) (version managed from default)
+[DEBUG]          commons-io:commons-io:jar:2.15.1:compile (version managed from default)
+[DEBUG]       org.codehaus.plexus:plexus-java:jar:1.2.0:compile (version managed from default)
+[DEBUG]          org.ow2.asm:asm:jar:9.6:compile
+[DEBUG]          com.thoughtworks.qdox:qdox:jar:2.0.3:compile
+[DEBUG]       org.apache.maven.surefire:surefire-shared-utils:jar:3.2.5:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-logger-api:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-extensions-api:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-extensions-spi:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.15.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.2.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.6
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-shared-utils:jar:3.2.5
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@18ff02e4]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test:default-test' with basic configurator -->
+[DEBUG]   (f) additionalClasspathDependencies = []
+[DEBUG]   (s) additionalClasspathElements = []
+[DEBUG]   (s) basedir = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (f) classesDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes
+[DEBUG]   (s) classpathDependencyExcludes = []
+[DEBUG]   (s) dependenciesToScan = []
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) excludeJUnit5Engines = []
+[DEBUG]   (f) excludedEnvironmentVariables = []
+[DEBUG]   (s) excludes = []
+[DEBUG]   (s) failIfNoSpecifiedTests = true
+[DEBUG]   (s) failIfNoTests = false
+[DEBUG]   (s) failOnFlakeCount = 0
+[DEBUG]   (f) forkCount = 0
+[DEBUG]   (s) forkedProcessExitTimeoutInSeconds = 30
+[DEBUG]   (s) includeJUnit5Engines = []
+[DEBUG]   (s) includes = []
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) parallelOptimized = true
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:3.2.5:, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:3.2.5:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:3.2.5:compile, org.apache.maven.surefire:surefire-logger-api=org.apache.maven.surefire:surefire-logger-api:jar:3.2.5:compile, org.apache.maven.surefire:surefire-extensions-api=org.apache.maven.surefire:surefire-extensions-api:jar:3.2.5:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:3.2.5:compile, org.apache.maven.surefire:surefire-extensions-spi=org.apache.maven.surefire:surefire-extensions-spi:jar:3.2.5:compile, org.eclipse.aether:aether-util=org.eclipse.aether:aether-util:jar:1.0.0.v20140518:compile, org.eclipse.aether:aether-api=org.eclipse.aether:aether-api:jar:1.0.0.v20140518:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.1:compile, commons-io:commons-io=commons-io:commons-io:jar:2.15.1:compile, org.codehaus.plexus:plexus-java=org.codehaus.plexus:plexus-java:jar:1.2.0:compile, org.ow2.asm:asm=org.ow2.asm:asm:jar:9.6:compile, com.thoughtworks.qdox:qdox=com.thoughtworks.qdox:qdox:jar:2.0.3:compile, org.apache.maven.surefire:surefire-shared-utils=org.apache.maven.surefire:surefire-shared-utils:jar:3.2.5:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugins.maven_surefire_plugin.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:3.2.5:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) project = MavenProject: com.artha:ArthaFEAutomation:1.0-SNAPSHOT @ /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/pom.xml
+[DEBUG]   (s) projectArtifactMap = {com.microsoft.playwright:playwright=com.microsoft.playwright:playwright:jar:1.46.0:compile, com.google.code.gson:gson=com.google.code.gson:gson:jar:2.11.0:compile, com.google.errorprone:error_prone_annotations=com.google.errorprone:error_prone_annotations:jar:2.27.0:compile, org.opentest4j:opentest4j=org.opentest4j:opentest4j:jar:1.3.0:compile, com.microsoft.playwright:driver=com.microsoft.playwright:driver:jar:1.46.0:compile, com.microsoft.playwright:driver-bundle=com.microsoft.playwright:driver-bundle:jar:1.46.0:compile, org.junit.jupiter:junit-jupiter=org.junit.jupiter:junit-jupiter:jar:5.9.3:test, org.junit.jupiter:junit-jupiter-api=org.junit.jupiter:junit-jupiter-api:jar:5.9.3:test, org.junit.platform:junit-platform-commons=org.junit.platform:junit-platform-commons:jar:1.9.3:test, org.apiguardian:apiguardian-api=org.apiguardian:apiguardian-api:jar:1.1.2:test, org.junit.jupiter:junit-jupiter-params=org.junit.jupiter:junit-jupiter-params:jar:5.9.3:test, org.junit.jupiter:junit-jupiter-engine=org.junit.jupiter:junit-jupiter-engine:jar:5.9.3:test, org.junit.platform:junit-platform-engine=org.junit.platform:junit-platform-engine:jar:1.9.3:test, org.testng:testng=org.testng:testng:jar:7.10.2:test, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.7.36:test, com.beust:jcommander=com.beust:jcommander:jar:1.82:test, org.webjars:jquery=org.webjars:jquery:jar:3.7.1:test, io.qameta.allure:allure-junit5=io.qameta.allure:allure-junit5:jar:2.29.0:test, io.qameta.allure:allure-junit-platform=io.qameta.allure:allure-junit-platform:jar:2.29.0:test, org.junit.platform:junit-platform-launcher=org.junit.platform:junit-platform-launcher:jar:1.10.3:test, io.qameta.allure:allure-test-filter=io.qameta.allure:allure-test-filter:jar:2.29.0:test, io.qameta.allure:allure-java-commons=io.qameta.allure:allure-java-commons:jar:2.29.0:test, io.qameta.allure:allure-model=io.qameta.allure:allure-model:jar:2.29.0:test}
+[DEBUG]   (s) projectBuildDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target
+[DEBUG]   (s) properties = {listener=io.qameta.allure.junit5.AllureJunit5}
+[DEBUG]   (s) redirectTestOutputToFile = true
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/surefire-reports
+[DEBUG]   (f) rerunFailingTestsCount = 0
+[DEBUG]   (f) reuseForks = false
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@4248b963
+[DEBUG]   (f) shutdown = exit
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) skipAfterFailureCount = 0
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) suiteXmlFiles = []
+[DEBUG]   (s) tempDir = surefire
+[DEBUG]   (s) test = DealTest
+[DEBUG]   (s) testClassesDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/src/test/java
+[DEBUG]   (s) threadCountClasses = 0
+[DEBUG]   (s) threadCountMethods = 0
+[DEBUG]   (s) threadCountSuites = 0
+[DEBUG]   (s) trimStackTrace = false
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (f) useModulePath = false
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /Users/bharatpandey/IdeaProjects/ArthaFEAutomation
+[DEBUG] -- end configuration --
+[DEBUG] Using JVM: /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java with Java version 23.0
+[WARNING] useSystemClassLoader setting has no effect when not forking
+[WARNING] The parameter forkCount should likely not be 0. Forking a JVM for tests improves test accuracy. Ensure to have a <forkCount> >= 1.
+[DEBUG] Resolved included and excluded patterns: DealTest
+[DEBUG] Surefire report directory: /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/surefire-reports
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[DEBUG] Using the provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[DEBUG] Setting system property [basedir]=[/Users/bharatpandey/IdeaProjects/ArthaFEAutomation]
+[DEBUG] Setting system property [test]=[DealTest]
+[DEBUG] Setting system property [user.dir]=[/Users/bharatpandey/IdeaProjects/ArthaFEAutomation]
+[DEBUG] Setting system property [localRepository]=[/Users/bharatpandey/.m2/repository]
+[DEBUG] Using in-process starter
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=25583, ConflictMarker.markTime=34500, ConflictMarker.nodeCount=15, ConflictIdSorter.graphTime=14250, ConflictIdSorter.topsortTime=7000, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=122458, ConflictResolver.conflictItemCount=14, DfDependencyCollector.collectTime=6895417, DfDependencyCollector.transformTime=213541}
+[DEBUG] Resolving artifact org.junit.platform:junit-platform-launcher:1.9.3
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=17750, ConflictMarker.markTime=13917, ConflictMarker.nodeCount=8, ConflictIdSorter.graphTime=6417, ConflictIdSorter.topsortTime=6375, ConflictIdSorter.conflictIdCount=5, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=63833, ConflictResolver.conflictItemCount=7, DfDependencyCollector.collectTime=184875, DfDependencyCollector.transformTime=115500}
+[DEBUG] Resolved artifact org.junit.platform:junit-platform-launcher:1.9.3 to [org.junit.platform:junit-platform-launcher:jar:1.9.3, org.junit.platform:junit-platform-engine:jar:1.9.3, org.opentest4j:opentest4j:jar:1.2.0, org.junit.platform:junit-platform-commons:jar:1.9.3, org.apiguardian:apiguardian-api:jar:1.1.2]
+[DEBUG] test classpath:  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/test-classes  /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/classes  /Users/bharatpandey/.m2/repository/com/microsoft/playwright/playwright/1.46.0/playwright-1.46.0.jar  /Users/bharatpandey/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar  /Users/bharatpandey/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar  /Users/bharatpandey/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar  /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver/1.46.0/driver-1.46.0.jar  /Users/bharatpandey/.m2/repository/com/microsoft/playwright/driver-bundle/1.46.0/driver-bundle-1.46.0.jar  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar  /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar  /Users/bharatpandey/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar  /Users/bharatpandey/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar  /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar  /Users/bharatpandey/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar  /Users/bharatpandey/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar  /Users/bharatpandey/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar  /Users/bharatpandey/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit5/2.29.0/allure-junit5-2.29.0.jar  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-junit-platform/2.29.0/allure-junit-platform-2.29.0.jar  /Users/bharatpandey/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.3/junit-platform-launcher-1.10.3.jar  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar  /Users/bharatpandey/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar
+[DEBUG] provider classpath:  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/3.2.5/surefire-junit-platform-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-api/3.2.5/surefire-api-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.2.5/surefire-logger-api-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.2.5/surefire-shared-utils-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/common-java5/3.2.5/common-java5-3.2.5.jar
+[DEBUG] test(compact) classpath:  test-classes  classes  playwright-1.46.0.jar  gson-2.11.0.jar  error_prone_annotations-2.27.0.jar  opentest4j-1.3.0.jar  driver-1.46.0.jar  driver-bundle-1.46.0.jar  junit-jupiter-5.9.3.jar  junit-jupiter-api-5.9.3.jar  junit-platform-commons-1.9.3.jar  apiguardian-api-1.1.2.jar  junit-jupiter-params-5.9.3.jar  junit-jupiter-engine-5.9.3.jar  junit-platform-engine-1.9.3.jar  testng-7.10.2.jar  slf4j-api-1.7.36.jar  jcommander-1.82.jar  jquery-3.7.1.jar  allure-junit5-2.29.0.jar  allure-junit-platform-2.29.0.jar  junit-platform-launcher-1.10.3.jar  allure-test-filter-2.29.0.jar  allure-java-commons-2.29.0.jar  allure-model-2.29.0.jar
+[DEBUG] provider(compact) classpath:  surefire-junit-platform-3.2.5.jar  surefire-api-3.2.5.jar  surefire-logger-api-3.2.5.jar  surefire-shared-utils-3.2.5.jar  common-java5-3.2.5.jar
+[DEBUG] in-process classpath:  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/3.2.5/surefire-junit-platform-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-api/3.2.5/surefire-api-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.2.5/surefire-logger-api-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.2.5/surefire-shared-utils-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/common-java5/3.2.5/common-java5-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.2.5/maven-surefire-common-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-booter/3.2.5/surefire-booter-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.2.5/surefire-extensions-api-3.2.5.jar  /Users/bharatpandey/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.2.5/surefire-extensions-spi-3.2.5.jar
+[DEBUG] in-process(compact) classpath:  surefire-junit-platform-3.2.5.jar  surefire-api-3.2.5.jar  surefire-logger-api-3.2.5.jar  surefire-shared-utils-3.2.5.jar  common-java5-3.2.5.jar  maven-surefire-common-3.2.5.jar  surefire-booter-3.2.5.jar  surefire-extensions-api-3.2.5.jar  surefire-extensions-spi-3.2.5.jar
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.115 s
+[INFO] Finished at: 2026-01-20T15:52:28+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project ArthaFEAutomation: 
+[ERROR] 
+[ERROR] Please refer to /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] Exception in provider
+[ERROR] org.apache.maven.surefire.booter.SurefireExecutionException: Exception in provider
+[ERROR] 	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:93)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1212)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1090)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:910)
+[ERROR] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+[ERROR] 	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+[ERROR] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+[ERROR] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+[ERROR] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
+[ERROR] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
+[ERROR] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
+[ERROR] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[ERROR] Caused by: java.lang.NoSuchMethodError: 'java.util.Set org.junit.platform.engine.TestDescriptor.getAncestors()'
+[ERROR] 	at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.getTestClassNames(StackTracePruningEngineExecutionListener.java:50)
+[ERROR] 	at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.executionFinished(StackTracePruningEngineExecutionListener.java:39)
+[ERROR] 	at org.junit.platform.launcher.core.DelegatingEngineExecutionListener.executionFinished(DelegatingEngineExecutionListener.java:46)
+[ERROR] 	at org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener.reportEngineFailure(OutcomeDelayingEngineExecutionListener.java:83)
+[ERROR] 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:203)
+[ERROR] 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+[ERROR] 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+[ERROR] 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+[ERROR] 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+[ERROR] 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+[ERROR] 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+[ERROR] 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+[ERROR] 	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+[ERROR] 	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+[ERROR] 	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+[ERROR] 	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+[ERROR] 	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+[ERROR] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+[ERROR] 	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:137)
+[ERROR] 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:148)
+[ERROR] 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:88)
+[ERROR] 	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
+[ERROR] 	... 28 more
+[ERROR] 
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project ArthaFEAutomation: 
+
+Please refer to /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+Exception in provider
+org.apache.maven.surefire.booter.SurefireExecutionException: Exception in provider
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:93)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1212)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1090)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:910)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+Caused by: java.lang.NoSuchMethodError: 'java.util.Set org.junit.platform.engine.TestDescriptor.getAncestors()'
+	at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.getTestClassNames(StackTracePruningEngineExecutionListener.java:50)
+	at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.executionFinished(StackTracePruningEngineExecutionListener.java:39)
+	at org.junit.platform.launcher.core.DelegatingEngineExecutionListener.executionFinished(DelegatingEngineExecutionListener.java:46)
+	at org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener.reportEngineFailure(OutcomeDelayingEngineExecutionListener.java:83)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:203)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:137)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:148)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:88)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
+	... 28 more
+
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.apache.maven.plugin.MojoExecutionException: 
+
+Please refer to /Users/bharatpandey/IdeaProjects/ArthaFEAutomation/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+Exception in provider
+org.apache.maven.surefire.booter.SurefireExecutionException: Exception in provider
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:93)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1212)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1090)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:910)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+Caused by: java.lang.NoSuchMethodError: 'java.util.Set org.junit.platform.engine.TestDescriptor.getAncestors()'
+	at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.getTestClassNames(StackTracePruningEngineExecutionListener.java:50)
+	at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.executionFinished(StackTracePruningEngineExecutionListener.java:39)
+	at org.junit.platform.launcher.core.DelegatingEngineExecutionListener.executionFinished(DelegatingEngineExecutionListener.java:46)
+	at org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener.reportEngineFailure(OutcomeDelayingEngineExecutionListener.java:83)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:203)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:137)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:148)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:88)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:91)
+	... 28 more
+
+    at org.apache.maven.plugin.surefire.SurefireHelper.throwException (SurefireHelper.java:244)
+    at org.apache.maven.plugin.surefire.SurefireHelper.reportExecution (SurefireHelper.java:159)
+    at org.apache.maven.plugin.surefire.SurefirePlugin.handleSummary (SurefirePlugin.java:542)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked (AbstractSurefireMojo.java:1102)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute (AbstractSurefireMojo.java:910)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.apache.maven.surefire.booter.SurefireExecutionException: Exception in provider
+    at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess (InPluginVMSurefireStarter.java:93)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider (AbstractSurefireMojo.java:1212)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked (AbstractSurefireMojo.java:1090)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute (AbstractSurefireMojo.java:910)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: java.lang.NoSuchMethodError: 'java.util.Set org.junit.platform.engine.TestDescriptor.getAncestors()'
+    at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.getTestClassNames (StackTracePruningEngineExecutionListener.java:50)
+    at org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener.executionFinished (StackTracePruningEngineExecutionListener.java:39)
+    at org.junit.platform.launcher.core.DelegatingEngineExecutionListener.executionFinished (DelegatingEngineExecutionListener.java:46)
+    at org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener.reportEngineFailure (OutcomeDelayingEngineExecutionListener.java:83)
+    at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute (EngineExecutionOrchestrator.java:203)
+    at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute (EngineExecutionOrchestrator.java:169)
+    at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute (EngineExecutionOrchestrator.java:93)
+    at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0 (EngineExecutionOrchestrator.java:58)
+    at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams (EngineExecutionOrchestrator.java:141)
+    at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute (EngineExecutionOrchestrator.java:57)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute (DefaultLauncher.java:103)
+    at org.junit.platform.launcher.core.DefaultLauncher.execute (DefaultLauncher.java:85)
+    at org.junit.platform.launcher.core.DelegatingLauncher.execute (DelegatingLauncher.java:47)
+    at org.apache.maven.surefire.junitplatform.LazyLauncher.execute (LazyLauncher.java:56)
+    at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute (JUnitPlatformProvider.java:184)
+    at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests (JUnitPlatformProvider.java:148)
+    at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke (JUnitPlatformProvider.java:122)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray2 (ReflectionUtils.java:137)
+    at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke (ProviderFactory.java:148)
+    at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider (ProviderFactory.java:88)
+    at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess (InPluginVMSurefireStarter.java:91)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider (AbstractSurefireMojo.java:1212)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked (AbstractSurefireMojo.java:1090)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute (AbstractSurefireMojo.java:910)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[DEBUG] Shutting down adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[DEBUG] Shutting down 'file-lock' factory
+[DEBUG] Shutting down 'rwlock-local' factory
+[DEBUG] Shutting down 'semaphore-local' factory
+[DEBUG] Shutting down 'noop' factory
