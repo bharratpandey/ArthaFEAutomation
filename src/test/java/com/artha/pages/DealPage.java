@@ -537,7 +537,8 @@ public class DealPage {
                 }
             } catch (Exception ignored) {}
 
-            waitForDealDetailsToRender(5000);
+            waitForDealDetailsToRender(15000);
+            page.waitForTimeout(3000); // extra wait for stage buttons to render
 
             // Click PARTNER ALIGNMENT CTA
             DashboardManager.log("[Deal Flow] -> Clicking 'Partner Alignment' CTA...");
