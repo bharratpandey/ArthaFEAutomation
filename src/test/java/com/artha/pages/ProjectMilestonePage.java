@@ -45,15 +45,22 @@ public class ProjectMilestonePage {
             // Find row/card with Deal Name and click "Open Project"
             DashboardManager.log("[Project] Searching for project: " + dealName);
 
-            // XPath: Find element with dealName text, then find the 'Open Project' button in the same row/container
-            Locator openProjectBtn = page.locator("xpath=//span[@aria-label='" + dealName + "']/ancestor::tr//button[contains(text(), 'Open Project')]").first();
+// Search for the project by name
+            Locator searchInput = page.locator("input[placeholder='Search Project ...']").first();
+            searchInput.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(10000));
+            searchInput.click();
+            searchInput.fill(dealName);
+            page.waitForTimeout(2000); // wait for list to load
+
+// Click Open Project button in the filtered result
+            Locator openProjectBtn = page.locator("tr")
+                    .filter(new Locator.FilterOptions().setHas(page.locator("span[aria-label='" + dealName + "']")))
+                    .locator("button:has-text('Open Project')")
+                    .first();
 
             if (openProjectBtn.count() == 0) {
-                // Fallback for non-table view or different structure
-                openProjectBtn = page.locator("div")
-                        .filter(new Locator.FilterOptions().setHasText(dealName))
-                        .locator("button:has-text('Open Project')")
-                        .first();
+                // Fallback: just click first visible Open Project button after search
+                openProjectBtn = page.locator("button:has-text('Open Project')").first();
             }
 
             if (openProjectBtn.count() > 0) {
