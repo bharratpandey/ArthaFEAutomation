@@ -18,7 +18,7 @@ public class EmailSender {
         final String fromEmail = "bharat.pandeyltd@gmail.com";
         String envPassword = System.getenv("EMAIL_PASSWORD");
         final String appPassword = (envPassword == null || envPassword.isEmpty())
-                ? "boecqfqfmrjebbjq"
+                ? "joolfzckxmlguwnl"
                 : envPassword;
 
         // Dynamic IST time
@@ -127,7 +127,7 @@ public class EmailSender {
             DashboardManager.log("✅ Artha Dashboard Email sent at: " + istTime);
 
         } catch (MessagingException e) {
-            e.printStackTrace();
+            System.err.println("❌ Email sending failed: " + e.getMessage());
         }
     }
 }
