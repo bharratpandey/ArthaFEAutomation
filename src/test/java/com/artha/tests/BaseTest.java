@@ -34,16 +34,43 @@ public class BaseTest {
         context = browser.newContext();
         page = context.newPage();
 
-        // Only print actual browser errors – suppress log/warning/verbose noise
+        // ── Browser console errors ────────────────────────────────────────
+        // Drop known app-level noise (React background XHRs, menu hydration,
+        // etc.). These never indicate a test failure — the test passes despite
+        // them every run. Only surface truly unexpected console errors.
         page.onConsoleMessage(msg -> {
-            if ("error".equals(msg.type())) {
-                DashboardManager.log("[BROWSER ERROR] " + msg.text());
+            if (!"error".equals(msg.type())) return;
+
+            String text = msg.text();
+
+            // Silently ignore common app-level noise
+            if (text.contains("NetworkError")
+                    || text.contains("Failed to load resource")
+                    || text.contains("Invalid menu data")
+                    || text.contains("Non-Error promise rejection")
+                    || text.contains("ResizeObserver loop")
+                    || text.contains("404")
+                    || text.contains("500")) {
+                return;
             }
+
+            // Everything else is worth knowing about
+            DashboardManager.log("[BROWSER ERROR] " + text);
         });
 
-        // Capture page errors
+        // ── Page-level errors (uncaught exceptions) ───────────────────────
+        // NetworkError / Failed to fetch are React SPA background blips —
+        // not test failures. Log anything else.
         page.onPageError(err -> {
-            DashboardManager.log("[PAGE ERROR] " + err);
+            String text = err == null ? "" : err.toString();
+
+            if (text.contains("NetworkError")
+                    || text.contains("Failed to fetch")
+                    || text.contains("Load failed")) {
+                return;
+            }
+
+            DashboardManager.log("[PAGE ERROR] " + text);
         });
     }
 
