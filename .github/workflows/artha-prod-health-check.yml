@@ -1,13 +1,5 @@
 name: Artha Prod Health Check
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Schedule:
-#   5:00 AM IST  = 23:30 UTC (previous day)  ← night run
-#   5:00 PM IST  = 11:30 UTC                  ← afternoon run
-#
-# Both run Monday–Friday only.
-# workflow_dispatch lets you trigger it manually from the GitHub Actions UI.
-# ─────────────────────────────────────────────────────────────────────────────
 on:
   schedule:
     - cron: '30 23 * * 0-4'   # 5:00 AM IST  (Sun–Thu UTC = Mon–Fri IST)
@@ -29,12 +21,9 @@ jobs:
     timeout-minutes: 60
 
     steps:
-
-      # ── 1. Checkout ────────────────────────────────────────────────────────
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # ── 2. Java 17 ────────────────────────────────────────────────────────
       - name: Set up Java 17
         uses: actions/setup-java@v4
         with:
@@ -42,7 +31,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      # ── 3. System deps for Chromium (headless Linux) ──────────────────────
       - name: Install Chromium system dependencies
         run: |
           sudo apt-get update -qq
@@ -51,7 +39,6 @@ jobs:
             libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 \
             libxfixes3 libxrandr2 libgbm1 libasound2t64 xvfb
 
-      # ── 4. Cache Playwright browsers (keyed on pom.xml) ───────────────────
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         with:
@@ -60,7 +47,6 @@ jobs:
           restore-keys: |
             playwright-browsers-
 
-      # ── 5. Resolve Maven deps + install Chromium ──────────────────────────
       - name: Resolve Maven dependencies
         run: mvn dependency:resolve --no-transfer-progress -q
 
@@ -86,8 +72,6 @@ jobs:
           sudo java -cp "$PLAYWRIGHT_JAR:$DRIVER_JAR:$BUNDLE_JAR" \
             com.microsoft.playwright.CLI install-deps chromium
 
-      # ── 6. Determine email recipient ──────────────────────────────────────
-      # Manual dispatch can override; scheduled runs use the hardcoded default.
       - name: Set email recipient
         id: email
         run: |
@@ -97,8 +81,8 @@ jobs:
             echo "to=bharat.pandey@emb.global,saumya.gupta@emb.global,ashish.mishra@emb.global" >> $GITHUB_OUTPUT
           fi
 
-      # ── 7. Run the health check ────────────────────────────────────────────
       - name: Run Artha Prod Health Check
+        id: run_test
         run: |
           xvfb-run mvn test \
             -Dtest=ProdHealthCheckTest \
@@ -109,7 +93,6 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           CI: true
 
-      # ── 8. Upload artifacts (always — even on failure) ────────────────────
       - name: Upload HTML Dashboard
         if: always()
         uses: actions/upload-artifact@v4
@@ -126,7 +109,6 @@ jobs:
           path: target/artha-prod-health-trace.zip
           retention-days: 14
 
-      # ── 9. Print run summary in GitHub Actions UI ─────────────────────────
       - name: Print run summary
         if: always()
         run: |
@@ -138,3 +120,82 @@ jobs:
           echo "| Trigger | ${{ github.event_name }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Recipients | ${{ steps.email.outputs.to }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Trace viewer | https://trace.playwright.dev/ |" >> $GITHUB_STEP_SUMMARY
+
+      # ── Save report + trace to Supabase ──────────────────────────
+      - name: Save to Supabase Dashboard
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          if [ "${{ steps.run_test.outcome }}" == "success" ]; then
+            STATUS="PASS"
+          else
+            STATUS="FAIL"
+          fi
+
+          TIMESTAMP=$(date +%s)
+          REPORT_URL="null"
+          TRACES_JSON="[]"
+
+          # Upload HTML report
+          REPORT_FILE="target/AutomationDashboard.html"
+          if [ -f "$REPORT_FILE" ]; then
+            REPORT_NAME="ARTHA_ProdHealthCheck_${TIMESTAMP}.html"
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+              -X POST \
+              -H "Authorization: Bearer ${SUPABASE_KEY}" \
+              -H "apikey: ${SUPABASE_KEY}" \
+              -H "Content-Type: text/html" \
+              -H "x-upsert: true" \
+              --data-binary @"${REPORT_FILE}" \
+              "${SUPABASE_URL}/storage/v1/object/reports/${REPORT_NAME}")
+            echo "Report upload HTTP: $HTTP_CODE"
+            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+              REPORT_URL="${SUPABASE_URL}/storage/v1/object/public/reports/${REPORT_NAME}"
+              echo "Report URL: $REPORT_URL"
+            fi
+          fi
+
+          # Upload trace
+          TRACE_FILE="target/artha-prod-health-trace.zip"
+          if [ -f "$TRACE_FILE" ]; then
+            TRACE_NAME="ARTHA_ProdHealthCheck_trace_${TIMESTAMP}.zip"
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+              -X POST \
+              -H "Authorization: Bearer ${SUPABASE_KEY}" \
+              -H "apikey: ${SUPABASE_KEY}" \
+              -H "Content-Type: application/zip" \
+              -H "x-upsert: true" \
+              --data-binary @"${TRACE_FILE}" \
+              "${SUPABASE_URL}/storage/v1/object/reports/${TRACE_NAME}")
+            echo "Trace upload HTTP: $HTTP_CODE"
+            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+              TRACE_URL="${SUPABASE_URL}/storage/v1/object/public/reports/${TRACE_NAME}"
+              TRACES_JSON="[{\"name\":\"artha-prod-health-trace.zip\",\"url\":\"${TRACE_URL}\"}]"
+              echo "Trace URL: $TRACE_URL"
+            fi
+          fi
+
+          # Insert row
+          curl -s -X POST \
+            -H "Authorization: Bearer ${SUPABASE_KEY}" \
+            -H "apikey: ${SUPABASE_KEY}" \
+            -H "Content-Type: application/json" \
+            -H "Prefer: return=minimal" \
+            -d "{
+              \"project\": \"ARTHA\",
+              \"report_name\": \"Artha Prod Health Check\",
+              \"environment\": \"PROD\",
+              \"status\": \"${STATUS}\",
+              \"passed\": 0,
+              \"failed\": 0,
+              \"total\": 0,
+              \"duration_seconds\": 0,
+              \"report_url\": $([ "$REPORT_URL" = "null" ] && echo "null" || echo "\"${REPORT_URL}\""),
+              \"trace_url\": null,
+              \"traces\": ${TRACES_JSON}
+            }" \
+            "${SUPABASE_URL}/rest/v1/test_reports"
+
+          echo "✅ Saved to Supabase dashboard (status: ${STATUS})"

@@ -51,6 +51,7 @@ jobs:
           sudo java -cp "$PLAYWRIGHT_JAR:$DRIVER_JAR:$BUNDLE_JAR" com.microsoft.playwright.CLI install-deps chromium
 
       - name: Run E2E Tests
+        id: run_test
         run: xvfb-run mvn test -Dtest=DealTest
         env:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
@@ -62,3 +63,81 @@ jobs:
         with:
           name: Artha-Automation-Dashboard
           path: target/AutomationDashboard.html
+
+      # ── Save report + trace to Supabase ──────────────────────────
+      - name: Save to Supabase Dashboard
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          if [ "${{ steps.run_test.outcome }}" == "success" ]; then
+            STATUS="PASS"
+          else
+            STATUS="FAIL"
+          fi
+
+          TIMESTAMP=$(date +%s)
+          REPORT_URL="null"
+          TRACES_JSON="[]"
+
+          # Upload HTML report
+          REPORT_FILE="target/AutomationDashboard.html"
+          if [ -f "$REPORT_FILE" ]; then
+            REPORT_NAME="ARTHA_DailyE2E_${TIMESTAMP}.html"
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+              -X POST \
+              -H "Authorization: Bearer ${SUPABASE_KEY}" \
+              -H "apikey: ${SUPABASE_KEY}" \
+              -H "Content-Type: text/html" \
+              -H "x-upsert: true" \
+              --data-binary @"${REPORT_FILE}" \
+              "${SUPABASE_URL}/storage/v1/object/reports/${REPORT_NAME}")
+            echo "Report upload HTTP: $HTTP_CODE"
+            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+              REPORT_URL="${SUPABASE_URL}/storage/v1/object/public/reports/${REPORT_NAME}"
+              echo "Report URL: $REPORT_URL"
+            fi
+          fi
+
+          # Upload trace if exists
+          TRACE_FILE="target/artha-daily-trace.zip"
+          if [ -f "$TRACE_FILE" ]; then
+            TRACE_NAME="ARTHA_DailyE2E_trace_${TIMESTAMP}.zip"
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+              -X POST \
+              -H "Authorization: Bearer ${SUPABASE_KEY}" \
+              -H "apikey: ${SUPABASE_KEY}" \
+              -H "Content-Type: application/zip" \
+              -H "x-upsert: true" \
+              --data-binary @"${TRACE_FILE}" \
+              "${SUPABASE_URL}/storage/v1/object/reports/${TRACE_NAME}")
+            echo "Trace upload HTTP: $HTTP_CODE"
+            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+              TRACE_URL="${SUPABASE_URL}/storage/v1/object/public/reports/${TRACE_NAME}"
+              TRACES_JSON="[{\"name\":\"artha-daily-trace.zip\",\"url\":\"${TRACE_URL}\"}]"
+            fi
+          fi
+
+          # Insert row
+          curl -s -X POST \
+            -H "Authorization: Bearer ${SUPABASE_KEY}" \
+            -H "apikey: ${SUPABASE_KEY}" \
+            -H "Content-Type: application/json" \
+            -H "Prefer: return=minimal" \
+            -d "{
+              \"project\": \"ARTHA\",
+              \"report_name\": \"Artha Daily E2E\",
+              \"environment\": \"PROD\",
+              \"status\": \"${STATUS}\",
+              \"passed\": 0,
+              \"failed\": 0,
+              \"total\": 0,
+              \"duration_seconds\": 0,
+              \"report_url\": $([ "$REPORT_URL" = "null" ] && echo "null" || echo "\"${REPORT_URL}\""),
+              \"trace_url\": null,
+              \"traces\": ${TRACES_JSON}
+            }" \
+            "${SUPABASE_URL}/rest/v1/test_reports"
+
+          echo "✅ Saved to Supabase dashboard (status: ${STATUS})"
