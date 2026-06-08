@@ -128,7 +128,7 @@ jobs:
             -d "{
               \"project\": \"ARTHA\",
               \"report_name\": \"Artha Daily E2E\",
-              \"environment\": \"PROD\",
+              \"environment\": \"UAT\",
               \"status\": \"${STATUS}\",
               \"passed\": 0,
               \"failed\": 0,
